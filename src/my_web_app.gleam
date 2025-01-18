@@ -8,6 +8,7 @@ pub fn main() {
     web_service
     |> mist.new
     |> mist.port(8080)
+    |> mist.bind("0.0.0.0")
     |> mist.start_http
   process.sleep_forever()
 }
